@@ -4,13 +4,9 @@ A helpful friend for piano practice.
 
 ## To run bytedance:
 In terminal run:
-{::comment}
-cd <directory of the keiis file>
-{:/comment}
+`cd <directory of the keiis file>`
 Then run:
-{::comment}
-python3 main.py
-{:/comment}
+`python3 main.py`
 
 ## Known possible errors:
 ![plot](./FileNotFoundError.jpeg)
