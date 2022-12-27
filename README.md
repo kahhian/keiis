@@ -11,5 +11,5 @@ Then run:\
 ## Known possible errors:
 ![plot](./FileNotFoundError.jpeg)\
 Run `brew install wget`. \
-![plot](.\audioread.exception.NoBackendError.png)
+![plot](./audioread.exception.NoBackendError.png)
 
