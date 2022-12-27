@@ -9,5 +9,5 @@ Then run:
 python3 main.py
 
 #Known possible errors:
-![plot](./directory_1/directory_2/.../directory_n/plot.png)
+![plot](./FileNotFoundError.jpeg)
 
