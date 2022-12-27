@@ -1,5 +1,7 @@
 # keiis
-A helpful friend for piano practice.
+A helpful friend for piano practice.\
+
+## Feature list: https://www.notion.so/bc6bfb8ff4f34ae4b0e050b117570f42?v=503bffb3330d4ce59d3b53945e48a833
 
 
 ## To run bytedance:
