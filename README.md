@@ -14,6 +14,6 @@ Error 1:\
 Run `brew install wget`. \
  \
 Error 2:\
-![plot](./audioread.exception.NoBackendError.png)
+![plot](./audioread.exception.NoBackendError.png) \
 Run `brew install ffmpeg`.
 
