@@ -13,9 +13,9 @@ Then run:\
 ### Known possible errors:
 Error 1:\
 ![plot](./FileNotFoundError.jpeg)\
-Run `brew install wget`. \
+Run `brew install wget` \
  \
 Error 2:\
 ![plot](./audioread.exception.NoBackendError.png) \
-Run `brew install ffmpeg`.
+Run `brew install ffmpeg`
 
