@@ -9,5 +9,8 @@ Then run:\
 `python3 main.py`
 
 ## Known possible errors:
-![plot](./FileNotFoundError.jpeg)
+![plot](./FileNotFoundError.jpeg)\
+Run `brew install wget`.\
+
+
 
