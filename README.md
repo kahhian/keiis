@@ -5,7 +5,7 @@ A helpful friend for piano practice.
 
 
 ### To run bytedance:
-In terminal run:\
+In terminal run:
 ```
 cd <directory of the keiis file>
 ```
@@ -15,7 +15,7 @@ python3 main.py
 ```
 ### Known possible errors:
 Error 1:\
-![plot](./FileNotFoundError.jpeg)\
+![plot](./FileNotFoundError.jpeg)
 ```
 Run `brew install wget`
 ```
