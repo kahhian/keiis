@@ -11,7 +11,7 @@ cd <directory of the keiis file>
 ```
 Then run:
 ```
-`python3 main.py`
+python3 main.py
 ```
 ### Known possible errors:
 Error 1:\
@@ -19,7 +19,6 @@ Error 1:\
 ```
 Run `brew install wget`
 ```
- \
 Error 2:\
 ![plot](./audioread.exception.NoBackendError.png) 
 ```
