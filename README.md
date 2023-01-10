@@ -15,13 +15,15 @@ python3 main.py
 ```
 ### Known possible errors:
 Error 1:\
-![plot](./FileNotFoundError.jpeg)
+![plot](./FileNotFoundError.jpeg)\
+Run:
 ```
-Run `brew install wget`
+brew install wget
 ```
 Error 2:\
-![plot](./audioread.exception.NoBackendError.png) 
+![plot](./audioread.exception.NoBackendError.png) \
+Run:
 ```
-Run `brew install ffmpeg`
+brew install ffmpeg
 ```
 
