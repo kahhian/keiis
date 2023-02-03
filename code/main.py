@@ -2,6 +2,38 @@
 import os
 import argparse
 
+def play_midi(midi_filename):
+    import pygame
+
+    # mixer config
+    freq = 44100  # audio CD quality
+    bitsize = -16   # unsigned 16 bit
+    channels = 2  # 1 is mono, 2 is stereo
+    buffer = 1024   # number of samples
+    pygame.mixer.init(freq, bitsize, channels, buffer)
+
+    # optional volume 0 to 1.0
+    pygame.mixer.music.set_volume(0.8)
+    '''Stream music_file in a blocking manner'''
+    clock = pygame.time.Clock()
+    pygame.mixer.music.load(midi_filename)
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy():
+        clock.tick(30) # check if playback has finished
+    
+    # optional volume 0 to 1.0
+    pygame.mixer.music.set_volume(0.8)
+
+    # try:
+    #     # use the midi file saved
+    #     play_music(midi_filename)
+    # except KeyboardInterrupt:
+    #     # if user hits Ctrl/C then exit
+    #     # (works only in console mode)
+    #     pygame.mixer.music.fadeout(1000)
+    #     pygame.mixer.music.stop()
+    #     raise SystemExit
+
 
 # kahhian
 def sheet2midi(args):
@@ -48,14 +80,26 @@ def sheet2midi(args):
         )
     )
 
-    # musescore cli
     subprocess.run(
         shlex.split(
-            "mscore -o lessons/{name}/{name}.mid lessons/{name}/{name}.mxl".format(
+            "mscore lessons/{name}/{name}.mxl".format(
                 name=file_name
             )
         )
     )
+
+
+    # # musescore cli
+    # subprocess.run(
+    #     shlex.split(
+    #         "mscore -o lessons/{name}/{name}.mid lessons/{name}/{name}.mxl".format(
+    #             name=file_name
+    #         )
+    #     )
+    # )
+
+
+
 
 
 # kahhian
