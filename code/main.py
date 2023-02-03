@@ -1,7 +1,9 @@
 # importing the required modules
 import os
 import argparse
+import sys
 
+input_file = sys.argv[-1]
 
 # kahhian
 def sheet2midi(args):
@@ -68,7 +70,7 @@ def audio2midi(args):
     )
 
     # Load audio
-    (audio, _) = load_audio("cut_liszt.mp3", sr=sample_rate, mono=True)
+    (audio, _) = load_audio(input_file, sr=sample_rate, mono=True)
 
     # Transcriptor
     transcriptor = PianoTranscription(device="cpu")  # 'cuda' | 'cpu'
@@ -78,46 +80,33 @@ def audio2midi(args):
 
 
 def main():
-    # create parser object
-    parser = argparse.ArgumentParser(description="keiis")
+	# create parser object
+	parser = argparse.ArgumentParser(description = "keiis")
 
-    # defining arguments for parser object
-    parser.add_argument(
-        "-mc",
-        "--midicomparison",
-        type=str,
-        nargs="*",
-        metavar="",
-        help="Midi Comparison Accuracy Test",
-    )
+	# defining arguments for parser object
+	parser.add_argument("-mc", "--midicomparison", type = str, nargs = "*",
+						metavar = "",
+						help = "Midi Comparison Accuracy Test")
+	
+	parser.add_argument("-m2s", "--midi2sheet", type = str, nargs = "*",
+						metavar = "", 
+						help = "Midi To Sheet Music")
+	
+	parser.add_argument("-s2m", "--sheet2midi", type = str, nargs = "*",
+						metavar = "yo",
+						help = "Sheet Music To Midi")
+	
+	parser.add_argument("-a2m", "--audio2midi", type = str, nargs = "*",
+						metavar = "hi", 
+                        help = "Audio To Midi")
 
-    parser.add_argument(
-        "-m2s",
-        "--midi2sheet",
-        type=str,
-        nargs="*",
-        metavar="",
-        help="Midi To Sheet Music",
-    )
 
-    parser.add_argument(
-        "-s2m",
-        "--sheet2midi",
-        type=str,
-        nargs="*",
-        metavar="",
-        help="Sheet Music To Midi",
-    )
 
-    parser.add_argument(
-        "-a2m", "--audio2midi", type=str, nargs="*", metavar="", help="Audio To Midi"
-    )
-
-    # parse the arguments from standard input
-    args = parser.parse_args()
-
-    # calling functions depending on type of argument
-    """
+	# parse the arguments from standard input
+	args = parser.parse_args()
+	
+	# calling functions depending on type of argument
+	'''
 	if args.midicomparison != None:
 		midicomparison(args)
 	elif args.midi2sheet != None:
@@ -126,13 +115,13 @@ def main():
 		sheet2midi(args)
 	elif args.audio2midi != None:
 		audio2midi(args)
-	"""
-    if args.sheet2midi != None:
-        sheet2midi(args)
-    elif args.audio2midi != None:
-        audio2midi(args)
-
+	'''
+	if args.sheet2midi != None:
+		sheet2midi(args)
+	elif args.audio2midi != None:
+		audio2midi(args)
+	
 
 if __name__ == "__main__":
-    # calling the main function
-    main()
+	# calling the main function
+	main()
