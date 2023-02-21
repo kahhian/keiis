@@ -204,7 +204,7 @@ def main():
     parser = argparse.ArgumentParser(description = "keiis")
 
 	# defining arguments for parser object
-    parser.add_argument("-mc", "--midicomparison", type = str, nargs = 2,
+    parser.add_argument("-mc", "--midi_comparison", type = str, nargs = 2,
 						metavar = "Input 2 midi files",
 						help = "Midi Comparison Accuracy Test")
 	
