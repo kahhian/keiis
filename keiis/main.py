@@ -17,7 +17,7 @@ def sheet2midi(args):
     s2m(input_file, "transcribed")
     
 # kahhian
-def midi_comparison():  
+def midi_comparison(args):  
     midi_web()
 
 
@@ -181,7 +181,7 @@ def practice(args):
 
 
 # kahhian
-def audio2midi():
+def audio2midi(args):
 
     input_file = sys.argv[-1]
 
