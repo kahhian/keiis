@@ -23,10 +23,10 @@ python3 audio2midi.py -a2m <Mp3 file>
 ```
 ### Sheet Music To Midi:
 Dependencies that need to be downloaded:
-```
+
 Java Development Kit (JDK) Version 11
 Tesseract OCR Version 3.04 https://github.com/tesseract-ocr/tesseract/releases/tag/3.04.00
-```
+
 Then in terminal run:
 ```
 git clone https://github.com/Audiveris/audiveris.git
