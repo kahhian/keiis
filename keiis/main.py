@@ -30,7 +30,7 @@ def practice(args):
 
     bad_file = True
 
-    while bad_file == True:
+    while bad_file is True:
         
         input_file = input("- Enter the filepath to your sheet music/audio/video/midi file [formats supported: mid/midi/pdf/png/jpeg/common audio or video formats]\n- Or enter [e] to exit.\nEnter: ")
         if input_file == "e" or input_file == "E":
@@ -81,7 +81,7 @@ def practice(args):
 
             mimestart = mimetypes.guess_type(file_base_name)[0]
 
-            if mimestart != None:
+            if mimestart is not None:
                 mimestart = mimestart.split('/')[0]
                 
                 # if file format is invaild
@@ -140,7 +140,7 @@ def practice(args):
         file_type = os.path.splitext(file_base_name)[1] 
 
         bad_file2 = True
-        while bad_file2 == True:
+        while bad_file2 is True:
             print("Audio/video file {} uploaded.".format(file_base_name))
             bad_file2 = False
 
@@ -249,15 +249,15 @@ def main():
 	elif args.midi2sheet != None:
 		midi2sheet(args)
 	'''
-    if args.sheet2midi != None:
+    if args.sheet2midi is not None:
         sheet2midi(args)
-    elif args.audio2midi != None:
+    elif args.audio2midi is not None:
         audio2midi(args)
-    elif args.midi_comparison != None:
+    elif args.midi_comparison is not None:
         midi_comparison(args)
-    elif args.practice != None:
+    elif args.practice is not None:
         practice(args)
-    elif args.midi2pianoroll != None:
+    elif args.midi2pianoroll is not None:
         midi2pianoroll(args)
 
 if __name__ == "__main__":
