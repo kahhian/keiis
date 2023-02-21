@@ -28,13 +28,15 @@ Java Development Kit (JDK) Version 11
 
 Tesseract OCR Version 3.04 https://github.com/tesseract-ocr/tesseract/releases/tag/3.04.00
 
-Then in terminal run:
+Then in terminal run these commands one at a time:
 ```
 git clone https://github.com/Audiveris/audiveris.git
-```
+
 cd audiveris
-```
+
 ./gradlew build
+```
+Then run after reopening terminal:
 ```
 cd <directory of the keiis file>
 ```
