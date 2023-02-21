@@ -1,6 +1,7 @@
 # kahhian
 
 import os
+import sys
 
 def a2m(input_file, mode):
     
@@ -20,7 +21,7 @@ def a2m(input_file, mode):
         print(cont)
         if cont != "r" and cont != "R":
             print("Transcription aborted.")
-            exit()
+            sys.exit()
             return 
         else:
             print("Rewriting transcription...")

@@ -114,7 +114,7 @@ class MaestroDataset(object):
         debugging = False
         if debugging:
             plot_waveform_midi_targets(data_dict, start_time, note_events)
-            exit()
+            sys.exit()
 
         return data_dict
 
