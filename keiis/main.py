@@ -35,7 +35,7 @@ def practice(args):
         input_file = input("- Enter the filepath to your sheet music/audio/video/midi file [formats supported: mid/midi/pdf/png/jpeg/common audio or video formats]\n- Or enter [e] to exit.\nEnter: ")
         if input_file == "e" or input_file == "E":
             print("See ya soon big baboon :D")
-            exit()
+            sys.exit()
         # extract file type 
         file_base_name = os.path.basename(input_file)
         file_name = os.path.splitext(file_base_name)[0] 
