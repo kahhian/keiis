@@ -204,7 +204,7 @@ def main():
 
 	# defining arguments for parser object
     parser.add_argument("-mc", "--midi_comparison", type = str, nargs = "*",
-						metavar = "",
+						metavar = "Input multiple midi files",
 						help = "Midi Comparison Accuracy Test")
 	
     parser.add_argument("-m2s", "--midi2sheet", type = str, nargs = 1,
@@ -244,9 +244,7 @@ def main():
 	
     # calling functions depending on type of argument
     '''
-	if args.midicomparison != None:
-		midicomparison(args)
-	elif args.midi2sheet != None:
+	if args.midi2sheet != None:
 		midi2sheet(args)
 	'''
     if args.sheet2midi != None:

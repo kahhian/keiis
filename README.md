@@ -27,6 +27,7 @@ Then run:
 python3 main.py -p <file>
 ```
 *Note: Dependencies from the other features have to be installed for practice mode to work
+
 ### Audio To Midi:
 Install dependencies:
 ```
@@ -91,8 +92,24 @@ cd <directory of the keiis file>
 ```
 Then run to obtain mp3 file:
 ```
-python3 main.py -pm <Midi file>
+python3 main.py -pm <Mp3 file>
 ```
+### Midi Comparison:
+In terminal, run:
+```
+cd <directory of the keiis file>
+```
+Then run to compare midi files:
+```
+python3 main.py -mc
+```
+This opens a website that compares midi files.
+
+Press the "Add Midi" button and add the midi files that you want to compare.
+
+
+
+
 ### Youtube Import:
 In terminal run:
 ```
