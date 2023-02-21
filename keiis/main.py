@@ -2,6 +2,8 @@
 import os
 import argparse
 import sys
+import subprocess
+import shlex
 
 from sheet2midi import s2m
 from audio2midi import a2m
@@ -16,13 +18,13 @@ def play_midi(midi_filename):
     FluidSynth().play_midi(midi_filename)
 
 # kahhian
-def sheet2midi(args):
+def sheet2midi():
     s2m(input_file)
     
 
 
 # kahhian
-def audio2midi(args):
+def audio2midi():
 
     a2m(input_file)
 
@@ -41,63 +43,73 @@ def audio2midi(args):
     # # Transcribe and write out to MIDI file
     # transcribed_dict = transcriptor.transcribe(audio, "cut_liszt.mid")
 
+'''
+def youtube2mp3():
+    subprocess.run(
+        shlex.split(
+            "yt-dlp -x --audio-format mp3 "
+            + input_file
+        )
+    )
+'''
 
+#cli
 def main():
-    # create parser object
-    parser = argparse.ArgumentParser(description="keiis")
+	# create parser object
+    parser = argparse.ArgumentParser(description = "keiis")
 
-    # defining arguments for parser object
-    parser.add_argument(
-        "-mc",
-        "--midicomparison",
-        type=str,
-        nargs="*",
-        metavar="",
-        help="Midi Comparison Accuracy Test",
-    )
+	# defining arguments for parser object
+    parser.add_argument("-mc", "--midicomparison", type = str, nargs = 2,
+						metavar = "Input 2 midi files",
+						help = "Midi Comparison Accuracy Test")
+	
+    parser.add_argument("-m2s", "--midi2sheet", type = str, nargs = 1,
+						metavar = "Input a midi file",
+						help = "Midi To Sheet Music")
+	
+    parser.add_argument("-s2m", "--sheet2midi", type = str, nargs = 1,
+						metavar = "Input a pdf file",
+						help = "Sheet Music To Midi")
+	
+    parser.add_argument("-a2m", "--audio2midi", type = str, nargs = 1,
+						metavar = "Input a mp3 file",
+                        help = "Audio To Midi")
 
-    parser.add_argument(
-        "-m2s",
-        "--midi2sheet",
-        type=str,
-        nargs="*",
-        metavar="",
-        help="Midi To Sheet Music",
-    )
+    parser.add_argument("-pm", "--play_midi", type = str, nargs = 1,
+						metavar = "Input a midi file",
+                        help = "Midi Player")
 
-    parser.add_argument(
-        "-s2m",
-        "--sheet2midi",
-        type=str,
-        nargs="*",
-        metavar="",
-        help="Sheet Music To Midi",
-    )
+    parser.add_argument("-m2pr", "--midi2pianoroll", type = str, nargs = 1,
+						metavar = "Input a midi file",
+                        help = "Midi To Piano Roll")
+    '''
+    parser.add_argument("-yt2mp3", "--youtube2mp3", type = str, nargs = 1,
+						metavar = "Input a Youtube link",
+                        help = "Youtube to Mp3")
+    '''
 
-    parser.add_argument(
-        "-a2m", "--audio2midi", type=str, nargs="*", metavar="", help="Audio To Midi"
-    )
 
-    # parse the arguments from standard input
+	# parse the arguments from standard input
     args = parser.parse_args()
-
+	
     # calling functions depending on type of argument
-    """
+    '''
 	if args.midicomparison != None:
 		midicomparison(args)
 	elif args.midi2sheet != None:
 		midi2sheet(args)
-	elif args.sheet2midi != None:
-		sheet2midi(args)
-	elif args.audio2midi != None:
-		audio2midi(args)
-	"""
+	'''
     if args.sheet2midi != None:
         sheet2midi(args)
     elif args.audio2midi != None:
         audio2midi(args)
-
+    elif args.play_midi != None:
+        play_midi(args)
+    '''
+    elif args.midi2pianoroll != None:
+        midi2pianoroll(args)
+	'''
 
 if __name__ == "__main__":
-    # calling the main function
-    main()
+	# calling the main function
+	main()
