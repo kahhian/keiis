@@ -9,8 +9,8 @@ def a2m(input_file, mode):
     file_name = os.path.splitext(file_full_name)[0]  
 
     # check if folder exists
-    new_path = mode+"/" + file_name + "/" + file_name
-    print(new_path)
+    new_path = mode+"/" + file_name + "/" + file_name + ".mid"
+    print("Writing to "+new_path)
 
     if os.path.exists(new_path):
         cont = input(
@@ -42,6 +42,6 @@ def a2m(input_file, mode):
     transcriptor = PianoTranscription(device="cpu")  # 'cuda' | 'cpu'
 
     # Transcribe and write out to MIDI file
-    transcribed_dict = transcriptor.transcribe(audio, "{}.mid".format(new_path))
+    transcribed_dict = transcriptor.transcribe(audio, "{}".format(new_path))
 
 

@@ -13,7 +13,7 @@ def sheet2midi(args):
 
     input_file = sys.argv[-1]
 
-    s2m(input_file, "transcribed")
+    s2m(input_file, "transcribed_s2m")
     
 # kahhian
 def midi_comparison(args):  
@@ -183,7 +183,7 @@ def audio2midi(args):
 
     input_file = sys.argv[-1]
 
-    a2m(input_file,"transcribed")
+    a2m(input_file,"transcribed_a2m")
 
 # seng hin
 '''
