@@ -1,4 +1,3 @@
-# importing the required modules
 import os
 import argparse
 import sys
@@ -20,7 +19,7 @@ def sheet2midi(args):
 def midi_comparison(args):  
     midi_web()
 
-
+# kahhian
 def practice(args):
 
     from music21 import converter
@@ -169,15 +168,14 @@ def practice(args):
 
         print("Exiting... See you next time :D")
         
-
-
-
-
-
-
-
-
-
+# kahhian
+def midi2pianoroll(args):
+    from music21 import converter
+    input_file = sys.argv[-1]
+    print("Loading piano roll...")
+    stream = converter.parse(input_file)
+    stream.id = "stream"
+    stream.plot("pianoroll")
 
 
 # kahhian
@@ -198,7 +196,8 @@ def youtube2mp3():
     )
 '''
 
-#cli
+# seng hin
+# cli
 def main():
 	# create parser object
     parser = argparse.ArgumentParser(description = "keiis")
@@ -220,9 +219,9 @@ def main():
 						metavar = "Input a mp3 file",
                         help = "Audio To Midi")
 
-    parser.add_argument("-pm", "--play_midi", type = str, nargs = 1,
-						metavar = "Input a midi file",
-                        help = "Midi Player")
+    # parser.add_argument("-pm", "--play_midi", type = str, nargs = 1,
+	# 					metavar = "Input a midi file",
+    #                     help = "Midi Player")
 
     parser.add_argument("-m2pr", "--midi2pianoroll", type = str, nargs = 1,
 						metavar = "Input a midi file",
@@ -258,6 +257,8 @@ def main():
         midi_comparison(args)
     elif args.practice != None:
         practice(args)
+    elif args.midi2pianoroll != None:
+        midi2pianoroll(args)
 
 if __name__ == "__main__":
 	# calling the main function
