@@ -22,7 +22,7 @@ def s2m(input_file, mode):
 
     # check if folder exists
     new_path = mode+"/" + file_name
-    print(new_path)
+    print("Writing to " +new_path)
 
     if os.path.exists(new_path):
         cont = input(
