@@ -2,7 +2,7 @@
 A helpful friend for piano practice.
 
 ## Feature list: https://www.notion.so/bc6bfb8ff4f34ae4b0e050b117570f42?v=503bffb3330d4ce59d3b53945e48a833
-## Gantt Chart: https://www.notion.so/outvision/10a8b4d4d1fc48f89fd2ab8f07a5fb55?v=596318bbdc24493ebb037eac4d52ac4f&pvs=4
+## Gantt Chart/Development Timeline: https://www.notion.so/outvision/10a8b4d4d1fc48f89fd2ab8f07a5fb55?v=596318bbdc24493ebb037eac4d52ac4f&pvs=4
 
 ### General:
 In terminal run to install Homebrew:
@@ -13,7 +13,27 @@ In terminal run to install ffmpeg, musescore, and git:
 ```
 brew install ffmpeg musescore git
 ```
+In terminal run to install music21:
+```
+pip install music21
+```
+### Practice Mode:
+In terminal run:
+```
+cd <directory of the keiis file>
+```
+Then run:
+```
+python3 main.py -p <file>
+```
+*Note: Dependencies from the other features have to be installed for practice mode to work
 ### Audio To Midi:
+Install dependencies:
+```
+pip install -r requirements.txt
+
+pip install piano_transcription_inference
+```
 In terminal run:
 ```
 cd <directory of the keiis file>
@@ -23,7 +43,7 @@ Then run to obtain midi file:
 python3 audio2midi.py -a2m <Mp3 file>
 ```
 ### Sheet Music To Midi:
-Dependencies that need to be downloaded:
+Install dependencies:
 
 Java Development Kit (JDK) Version 11
 
@@ -43,16 +63,16 @@ cd <directory of the keiis file>
 ```
 Then run to obtain midi file:
 ```
-python3 sheet2midi.py -s2m <JPEG/PDF file>
+python3 sheet2midi.py -s2m <JPEG/JPG/PDF/PNG file>
 ```
 ### Midi To Piano Roll:
-In terminal run:
+In terminal, run:
 ```
 cd <directory of the keiis file>
 ```
 Then run to obtain piano roll:
 ```
-python3 .py -m2pr <Midi file>
+python3 main.py -m2pr <Midi file>
 ```
 ### Midi Playback:
 In terminal run these commands one at a time:
