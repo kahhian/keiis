@@ -1,6 +1,33 @@
+# kahhian
+
 import os
 
-def a2m(input_file):
+def a2m(input_file, mode):
+    
+    # extract name of file without file extension
+    file_full_name = os.path.basename(input_file)
+    file_name = os.path.splitext(file_full_name)[0]  
+
+    # check if folder exists
+    new_path = mode+"/" + file_name + "/" + file_name
+    print(new_path)
+
+    if os.path.exists(new_path):
+        cont = input(
+            "WARNING: A file with the same name has been transcribed before. " +
+            "\nPlease rename your file and try again, or enter [r] to rewrite transcription and continue. "
+        )
+        print(cont)
+        if cont != "r" and cont != "R":
+            print("Transcription aborted.")
+            exit()
+            return 
+        else:
+            print("Rewriting transcription...")
+
+    # create new folder
+    else:
+        os.makedirs(new_path)
 
     from piano_transcription_inference import (
             PianoTranscription,
@@ -14,11 +41,7 @@ def a2m(input_file):
     # Transcriptor
     transcriptor = PianoTranscription(device="cpu")  # 'cuda' | 'cpu'
 
-    # extract name of file without file extension
-    file_full_name = os.path.basename(input_file)
-    file_name = os.path.splitext(file_full_name)[0]  
-
     # Transcribe and write out to MIDI file
-    transcribed_dict = transcriptor.transcribe(audio, "transcribed/" + str(file_name)+ ".mid")
+    transcribed_dict = transcriptor.transcribe(audio, "{}.mid".format(new_path))
 
 
