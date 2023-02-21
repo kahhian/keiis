@@ -142,8 +142,8 @@ def midi2pianoroll():
 #def midi2pianoroll():
     
 
-def youtube2mp3():
-    os.system("yt-dlp -x --audio-format mp3")
+#def youtube2mp3():
+    
     
 
 #cli

@@ -82,11 +82,7 @@ def main():
     parser.add_argument("-m2pr", "--midi2pianoroll", type = str, nargs = 1,
 						metavar = "Input a midi file",
                         help = "Midi To Piano Roll")
-    '''
-    parser.add_argument("-yt2mp3", "--youtube2mp3", type = str, nargs = 1,
-						metavar = "Input a Youtube link",
-                        help = "Youtube to Mp3")
-    '''
+
 
 
 	# parse the arguments from standard input
