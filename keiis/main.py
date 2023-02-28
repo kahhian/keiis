@@ -7,6 +7,7 @@ import shlex
 from sheet2midi import s2m
 from audio2midi import a2m
 from short_features import play_midi, midi_web
+#from gooey import Gooey
 
 # kahhian
 def sheet2midi(args):
@@ -198,6 +199,7 @@ def youtube2mp3():
 
 # seng hin
 # cli
+#@Gooey(body_bg_color="#9FD4A3",terminal_font_color="#000000",footer_bg_color="#9FD4A3")
 def main():
 	# create parser object
     parser = argparse.ArgumentParser(description = "keiis")
