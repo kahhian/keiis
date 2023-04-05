@@ -9,13 +9,15 @@ In terminal run to install Homebrew:
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-In terminal run to install ffmpeg, musescore, and git:
+In terminal run to install ffmpeg, musescore, git:
 ```
 brew install ffmpeg musescore git
 ```
-In terminal run to install music21:
+In terminal run to install music21 and torch:
 ```
 pip install music21
+
+pip install torch
 ```
 ```
 pip install -r requirements.txt
