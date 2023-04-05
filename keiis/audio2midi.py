@@ -1,6 +1,7 @@
 # kahhian
 
 import os
+import music21
 
 def a2m(input_file, mode):
     
@@ -9,7 +10,9 @@ def a2m(input_file, mode):
     file_name = os.path.splitext(file_full_name)[0]  
 
     # check if folder exists
-    new_path = mode+"/" + file_name + "/" + file_name + ".mid"
+    new_path = mode+"/" + file_name  #+ "/" + file_name + ".mid"
+    midi_path = mode+"/" + file_name + "/"+ file_name + ".mid"
+
     print("Writing to "+new_path)
 
     if os.path.exists(new_path):
@@ -42,6 +45,6 @@ def a2m(input_file, mode):
     transcriptor = PianoTranscription(device="cpu")  # 'cuda' | 'cpu'
 
     # Transcribe and write out to MIDI file
-    transcribed_dict = transcriptor.transcribe(audio, "{}".format(new_path))
+    transcribed_dict = transcriptor.transcribe(audio, "{}".format(midi_path))
 
 

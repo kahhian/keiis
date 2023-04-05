@@ -1,0 +1,212 @@
+2023-03-24 16:22:56,701 INFO [darlingfullscore]                 Book.java:485  | 4 sheets in /Users/kahhian/Downloads/darlingfullscore.pdf
+2023-03-24 16:22:56,799 INFO []                 Book.java:2056 | Stored /book.xml
+2023-03-24 16:22:56,799 INFO []                 Book.java:2002 | Book stored as transcribed_s2m/darlingfullscore/darlingfullscore.omr
+2023-03-24 16:22:56,804 INFO []                 Book.java:1698 | Book reaching PAGE on sheets:[#1#2#3#4]
+2023-03-24 16:22:56,806 INFO [darlingfullscore#1]       StepMonitoring.java:96   | LOAD
+2023-03-24 16:22:57,489 INFO [darlingfullscore#1]                 Book.java:1558 | Loaded image 1 2549x3299 from /Users/kahhian/Downloads/darlingfullscore.pdf
+2023-03-24 16:22:57,494 INFO [darlingfullscore#1]       StepMonitoring.java:96   | BINARY
+2023-03-24 16:22:58,028 INFO [darlingfullscore#1]       StepMonitoring.java:96   | SCALE
+2023-03-24 16:22:58,046 INFO [darlingfullscore#1]         ScaleBuilder.java:662  | Other combo peak too different (320,320,321), discarded
+2023-03-24 16:22:58,047 INFO [darlingfullscore#1]         ScaleBuilder.java:662  | Other combo peak too different (186,186,186), discarded
+2023-03-24 16:22:58,049 INFO [darlingfullscore#1]         ScaleBuilder.java:234  | Beam  guessed height: 14 -- 0.50 of [6..21] range
+2023-03-24 16:22:58,050 INFO [darlingfullscore#1]         ScaleBuilder.java:253  | Beam measured height:  7 -- 0.07 of [6..21] range at 74% of needed quorum
+2023-03-24 16:22:58,050 WARN [darlingfullscore#1]         ScaleBuilder.java:276  | No reliable beam height found, guessed value: 14
+2023-03-24 16:22:58,050 INFO [darlingfullscore#1]            ScaleStep.java:63   | Scale{line(2,3,3) interline(20,21,21) beam(14 extra)}
+2023-03-24 16:22:58,051 INFO [darlingfullscore#1]       StepMonitoring.java:96   | GRID
+2023-03-24 16:22:58,447 INFO [darlingfullscore#1]       LinesRetriever.java:439  | Global slope: 0.00000
+2023-03-24 16:22:58,478 INFO [darlingfullscore#1]    ClustersRetriever.java:266  | Retrieved line clusters: 8 of sizes [5] with interline(20,21,21)
+2023-03-24 16:22:58,789 INFO [darlingfullscore#1]            PeakGraph.java:181  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8]
+2023-03-24 16:22:59,462 INFO [darlingfullscore#1]        SystemManager.java:840  | 1 part along 4 systems
+2023-03-24 16:22:59,463 INFO [darlingfullscore#1]       StepMonitoring.java:96   | HEADERS
+2023-03-24 16:22:59,673 INFO [darlingfullscore#1]      BasicClassifier.java:366  | Classifier loaded XML norms.
+2023-03-24 16:22:59,677 INFO [darlingfullscore#1]   AbstractClassifier.java:352  | Classifier data loaded from default uri jar:file:/Users/kahhian/%5bGroup%20A%5d%202023%20Sec%204%20Computing+%20Coursework/Audiveris-5.2.5/lib/audiveris.jar!/res/basic-classifier.zip
+2023-03-24 16:23:00,282 INFO [darlingfullscore#1]       StepMonitoring.java:96   | STEM_SEEDS
+2023-03-24 16:23:00,368 INFO [darlingfullscore#1]            ImageUtil.java:202  | Discarding alpha band ...
+2023-03-24 16:23:01,042 INFO [darlingfullscore#1]            ImageUtil.java:88   | Converting max RGB to gray
+2023-03-24 16:23:01,285 INFO [darlingfullscore#1]        StemSeedsStep.java:95   | stem(3 max:3)
+2023-03-24 16:23:01,331 INFO [darlingfullscore#1]       StepMonitoring.java:96   | BEAMS
+2023-03-24 16:23:06,391 INFO [darlingfullscore#1]       BlackHeadSizer.java:99   | Spots black-head retrieval diameter: 18.9
+2023-03-24 16:23:06,592 INFO [darlingfullscore#1]       BlackHeadSizer.java:247  | Core black head count: 48 blackHead(width:25.0~0.0 height:21.9~1.0)
+2023-03-24 16:23:06,594 INFO [darlingfullscore#1]       BlackHeadSizer.java:252  | MusicFont{name:MusicalSymbols pointSize:84}
+2023-03-24 16:23:06,642 INFO [darlingfullscore#1]       StepMonitoring.java:96   | LEDGERS
+2023-03-24 16:23:07,088 INFO [darlingfullscore#1]       StepMonitoring.java:96   | HEADS
+2023-03-24 16:23:14,857 INFO [darlingfullscore#1]        HeadSeedTally.java:208  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:1.6,R:1.5] NOTEHEAD_VOID[L:1.5]}
+2023-03-24 16:23:14,858 INFO [darlingfullscore#1]       StepMonitoring.java:96   | STEMS
+2023-03-24 16:23:15,298 INFO [darlingfullscore#1]       StepMonitoring.java:96   | REDUCTION
+2023-03-24 16:23:15,382 INFO [darlingfullscore#1]        ReductionStep.java:118  | Stems free length median value: 71 pixels, 3.4 interlines
+2023-03-24 16:23:15,382 INFO [darlingfullscore#1]       StepMonitoring.java:96   | CUE_BEAMS
+2023-03-24 16:23:15,383 INFO [darlingfullscore#1]       StepMonitoring.java:96   | TEXTS
+2023-03-24 16:23:16,621 INFO [darlingfullscore#1]       StepMonitoring.java:96   | MEASURES
+2023-03-24 16:23:16,628 INFO [darlingfullscore#1]                 Page.java:279  | 32 raw measures: [8 in system#1, 8 in system#2, 8 in system#3, 8 in system#4]
+2023-03-24 16:23:16,629 INFO [darlingfullscore#1]       StepMonitoring.java:96   | CHORDS
+2023-03-24 16:23:16,648 INFO [darlingfullscore#1]       StepMonitoring.java:96   | CURVES
+2023-03-24 16:23:17,734 INFO [darlingfullscore#1]         SlursBuilder.java:160  | Slurs: 0
+2023-03-24 16:23:17,737 INFO [darlingfullscore#1]      SegmentsBuilder.java:114  | Segments: 4
+2023-03-24 16:23:17,744 INFO [darlingfullscore#1]       StepMonitoring.java:96   | SYMBOLS
+2023-03-24 16:23:18,071 INFO [darlingfullscore#1]       StepMonitoring.java:96   | LINKS
+2023-03-24 16:23:18,105 INFO [darlingfullscore#1]       StepMonitoring.java:96   | RHYTHMS
+2023-03-24 16:23:18,149 INFO [darlingfullscore#1]       StepMonitoring.java:96   | PAGE
+2023-03-24 16:23:18,154 INFO [darlingfullscore#1]                 Book.java:2076 | Book{darlingfullscore} storing
+2023-03-24 16:23:18,216 INFO [darlingfullscore#1]                 Book.java:2056 | Stored /book.xml
+2023-03-24 16:23:18,341 INFO [darlingfullscore#1]           DataHolder.java:297  | Stored /sheet#1/BINARY.png
+2023-03-24 16:23:19,191 INFO [darlingfullscore#1]                Sheet.java:1225 | Stored /sheet#1/sheet#1.xml
+2023-03-24 16:23:19,192 INFO [darlingfullscore#1]                 Book.java:2002 | Book stored as transcribed_s2m/darlingfullscore/darlingfullscore.omr
+2023-03-24 16:23:19,194 INFO [darlingfullscore#1]            SheetStub.java:1197 | Disposed sheet#1
+2023-03-24 16:23:19,262 INFO [darlingfullscore#1]                 Book.java:1767 | End of Stub#1 memory: 32,851,672
+2023-03-24 16:23:19,262 INFO [darlingfullscore#2]       StepMonitoring.java:96   | LOAD
+2023-03-24 16:23:19,320 INFO [darlingfullscore#2]                 Book.java:1558 | Loaded image 2 2549x3299 from /Users/kahhian/Downloads/darlingfullscore.pdf
+2023-03-24 16:23:19,321 INFO [darlingfullscore#2]       StepMonitoring.java:96   | BINARY
+2023-03-24 16:23:19,803 INFO [darlingfullscore#2]       StepMonitoring.java:96   | SCALE
+2023-03-24 16:23:19,810 INFO [darlingfullscore#2]         ScaleBuilder.java:662  | Other combo peak too different (186,186,187), discarded
+2023-03-24 16:23:19,811 INFO [darlingfullscore#2]         ScaleBuilder.java:234  | Beam  guessed height: 14 -- 0.50 of [6..21] range
+2023-03-24 16:23:19,812 INFO [darlingfullscore#2]         ScaleBuilder.java:253  | Beam measured height: 20 -- 0.93 of [6..21] range at 60% of needed quorum
+2023-03-24 16:23:19,812 WARN [darlingfullscore#2]         ScaleBuilder.java:276  | No reliable beam height found, guessed value: 14
+2023-03-24 16:23:19,812 INFO [darlingfullscore#2]            ScaleStep.java:63   | Scale{line(2,3,3) interline(20,21,21) beam(14 extra)}
+2023-03-24 16:23:19,813 INFO [darlingfullscore#2]       StepMonitoring.java:96   | GRID
+2023-03-24 16:23:19,997 INFO [darlingfullscore#2]       LinesRetriever.java:439  | Global slope: -0.00024
+2023-03-24 16:23:20,011 INFO [darlingfullscore#2]    ClustersRetriever.java:266  | Retrieved line clusters: 10 of sizes [5] with interline(20,21,21)
+2023-03-24 16:23:20,111 INFO [darlingfullscore#2]            PeakGraph.java:181  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8] #5[9, 10]
+2023-03-24 16:23:20,378 INFO [darlingfullscore#2]        SystemManager.java:840  | 1 part along 5 systems
+2023-03-24 16:23:20,378 INFO [darlingfullscore#2]       StepMonitoring.java:96   | HEADERS
+2023-03-24 16:23:20,724 INFO [darlingfullscore#2]       StepMonitoring.java:96   | STEM_SEEDS
+2023-03-24 16:23:20,820 INFO [darlingfullscore#2]            ImageUtil.java:202  | Discarding alpha band ...
+2023-03-24 16:23:21,212 INFO [darlingfullscore#2]            ImageUtil.java:88   | Converting max RGB to gray
+2023-03-24 16:23:21,374 INFO [darlingfullscore#2]        StemSeedsStep.java:95   | stem(3 max:3)
+2023-03-24 16:23:21,390 INFO [darlingfullscore#2]       StepMonitoring.java:96   | BEAMS
+2023-03-24 16:23:26,156 INFO [darlingfullscore#2]       BlackHeadSizer.java:99   | Spots black-head retrieval diameter: 18.9
+2023-03-24 16:23:26,378 INFO [darlingfullscore#2]       BlackHeadSizer.java:247  | Core black head count: 66 blackHead(width:25.0~0.0 height:21.8~1.1)
+2023-03-24 16:23:26,379 INFO [darlingfullscore#2]       BlackHeadSizer.java:252  | MusicFont{name:MusicalSymbols pointSize:84}
+2023-03-24 16:23:26,408 INFO [darlingfullscore#2]       StepMonitoring.java:96   | LEDGERS
+2023-03-24 16:23:26,548 INFO [darlingfullscore#2]       StepMonitoring.java:96   | HEADS
+2023-03-24 16:23:36,194 INFO [darlingfullscore#2]        HeadSeedTally.java:208  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:1.6,R:1.5] NOTEHEAD_VOID[L:1.5,R:1.5]}
+2023-03-24 16:23:36,194 INFO [darlingfullscore#2]       StepMonitoring.java:96   | STEMS
+2023-03-24 16:23:36,481 INFO [darlingfullscore#2]       StepMonitoring.java:96   | REDUCTION
+2023-03-24 16:23:36,536 INFO [darlingfullscore#2]        ReductionStep.java:118  | Stems free length median value: 71 pixels, 3.4 interlines
+2023-03-24 16:23:36,537 INFO [darlingfullscore#2]       StepMonitoring.java:96   | CUE_BEAMS
+2023-03-24 16:23:36,537 INFO [darlingfullscore#2]       StepMonitoring.java:96   | TEXTS
+2023-03-24 16:23:37,533 INFO [darlingfullscore#2]         TesseractOCR.java:208  | OCR. too low confident TextWord{ "i" bounds[1394,2701,1,3] conf:0.04 base[1394,2704]-[1395,2704] FontInfo{Times_New_Roman S-51}}
+2023-03-24 16:23:37,559 INFO [darlingfullscore#2]       StepMonitoring.java:96   | MEASURES
+2023-03-24 16:23:37,560 INFO [darlingfullscore#2]                 Page.java:279  | 40 raw measures: [8 in system#1, 8 in system#2, 8 in system#3, 8 in system#4, 8 in system#5]
+2023-03-24 16:23:37,561 INFO [darlingfullscore#2]       StepMonitoring.java:96   | CHORDS
+2023-03-24 16:23:37,570 INFO [darlingfullscore#2]       StepMonitoring.java:96   | CURVES
+2023-03-24 16:23:38,204 INFO [darlingfullscore#2]         SlursBuilder.java:160  | Slurs: 5
+2023-03-24 16:23:38,220 INFO [darlingfullscore#2]      SegmentsBuilder.java:114  | Segments: 47
+2023-03-24 16:23:38,228 INFO [darlingfullscore#2]       StepMonitoring.java:96   | SYMBOLS
+2023-03-24 16:23:38,568 INFO [darlingfullscore#2]       StepMonitoring.java:96   | LINKS
+2023-03-24 16:23:38,569 INFO [darlingfullscore#2]        SymbolsLinker.java:161  | No chord near direction SentenceInter{#3965(0.900) stf:1 S-21 Direction} _____________________________________________________________________________________________________________________
+2023-03-24 16:23:38,603 INFO [darlingfullscore#2]       StepMonitoring.java:96   | RHYTHMS
+2023-03-24 16:23:38,603 INFO [darlingfullscore#2]           PageRhythm.java:250  | {Page#2.1} Using last timeRational of previous page: 3/4
+2023-03-24 16:23:38,625 INFO [darlingfullscore#2]       StepMonitoring.java:96   | PAGE
+2023-03-24 16:23:38,627 INFO [darlingfullscore#2]                 Book.java:2076 | Book{darlingfullscore} storing
+2023-03-24 16:23:38,675 INFO [darlingfullscore#2]                 Book.java:2056 | Stored /book.xml
+2023-03-24 16:23:38,780 INFO [darlingfullscore#2]           DataHolder.java:297  | Stored /sheet#2/BINARY.png
+2023-03-24 16:23:39,568 INFO [darlingfullscore#2]                Sheet.java:1225 | Stored /sheet#2/sheet#2.xml
+2023-03-24 16:23:39,568 INFO [darlingfullscore#2]                 Book.java:2002 | Book stored as transcribed_s2m/darlingfullscore/darlingfullscore.omr
+2023-03-24 16:23:39,572 INFO [darlingfullscore#2]            SheetStub.java:1197 | Disposed sheet#2
+2023-03-24 16:23:39,650 INFO [darlingfullscore#2]                 Book.java:1767 | End of Stub#2 memory: 32,984,288
+2023-03-24 16:23:39,650 INFO [darlingfullscore#3]       StepMonitoring.java:96   | LOAD
+2023-03-24 16:23:39,685 INFO [darlingfullscore#3]                 Book.java:1558 | Loaded image 3 2549x3299 from /Users/kahhian/Downloads/darlingfullscore.pdf
+2023-03-24 16:23:39,685 INFO [darlingfullscore#3]       StepMonitoring.java:96   | BINARY
+2023-03-24 16:23:40,157 INFO [darlingfullscore#3]       StepMonitoring.java:96   | SCALE
+2023-03-24 16:23:40,159 INFO [darlingfullscore#3]         ScaleBuilder.java:662  | Other combo peak too different (432,433,433), discarded
+2023-03-24 16:23:40,159 INFO [darlingfullscore#3]         ScaleBuilder.java:662  | Other combo peak too different (186,186,187), discarded
+2023-03-24 16:23:40,160 INFO [darlingfullscore#3]         ScaleBuilder.java:234  | Beam  guessed height: 14 -- 0.50 of [6..21] range
+2023-03-24 16:23:40,160 INFO [darlingfullscore#3]         ScaleBuilder.java:253  | Beam measured height:  7 -- 0.07 of [6..21] range at 92% of needed quorum
+2023-03-24 16:23:40,160 WARN [darlingfullscore#3]         ScaleBuilder.java:276  | No reliable beam height found, guessed value: 14
+2023-03-24 16:23:40,160 INFO [darlingfullscore#3]            ScaleStep.java:63   | Scale{line(2,3,3) interline(20,21,21) beam(14 extra)}
+2023-03-24 16:23:40,160 INFO [darlingfullscore#3]       StepMonitoring.java:96   | GRID
+2023-03-24 16:23:40,236 INFO [darlingfullscore#3]       LinesRetriever.java:439  | Global slope: 0.00000
+2023-03-24 16:23:40,243 INFO [darlingfullscore#3]    ClustersRetriever.java:266  | Retrieved line clusters: 8 of sizes [5] with interline(20,21,21)
+2023-03-24 16:23:40,303 INFO [darlingfullscore#3]            PeakGraph.java:181  | Systems: #1[1, 2] #2[3, 4] #3[5, 6] #4[7, 8]
+2023-03-24 16:23:40,474 INFO [darlingfullscore#3]        SystemManager.java:840  | 1 part along 4 systems
+2023-03-24 16:23:40,474 INFO [darlingfullscore#3]       StepMonitoring.java:96   | HEADERS
+2023-03-24 16:23:40,703 INFO [darlingfullscore#3]       StepMonitoring.java:96   | STEM_SEEDS
+2023-03-24 16:23:40,821 INFO [darlingfullscore#3]            ImageUtil.java:202  | Discarding alpha band ...
+2023-03-24 16:23:41,157 INFO [darlingfullscore#3]            ImageUtil.java:88   | Converting max RGB to gray
+2023-03-24 16:23:41,265 INFO [darlingfullscore#3]        StemSeedsStep.java:95   | stem(3 max:3)
+2023-03-24 16:23:41,277 INFO [darlingfullscore#3]       StepMonitoring.java:96   | BEAMS
+2023-03-24 16:23:46,261 INFO [darlingfullscore#3]       BlackHeadSizer.java:99   | Spots black-head retrieval diameter: 18.9
+2023-03-24 16:23:46,432 INFO [darlingfullscore#3]       BlackHeadSizer.java:247  | Core black head count: 48 blackHead(width:25.0~0.0 height:22.2~1.0)
+2023-03-24 16:23:46,433 INFO [darlingfullscore#3]       BlackHeadSizer.java:252  | MusicFont{name:MusicalSymbols pointSize:84}
+2023-03-24 16:23:46,450 INFO [darlingfullscore#3]       StepMonitoring.java:96   | LEDGERS
+2023-03-24 16:23:46,609 INFO [darlingfullscore#3]       StepMonitoring.java:96   | HEADS
+2023-03-24 16:23:54,661 INFO [darlingfullscore#3]        HeadSeedTally.java:208  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:1.6,R:1.5] NOTEHEAD_VOID[L:1.5]}
+2023-03-24 16:23:54,661 INFO [darlingfullscore#3]       StepMonitoring.java:96   | STEMS
+2023-03-24 16:23:54,863 INFO [darlingfullscore#3]       StepMonitoring.java:96   | REDUCTION
+2023-03-24 16:23:54,898 INFO [darlingfullscore#3]        ReductionStep.java:118  | Stems free length median value: 71 pixels, 3.4 interlines
+2023-03-24 16:23:54,898 INFO [darlingfullscore#3]       StepMonitoring.java:96   | CUE_BEAMS
+2023-03-24 16:23:54,898 INFO [darlingfullscore#3]       StepMonitoring.java:96   | TEXTS
+2023-03-24 16:23:55,891 INFO [darlingfullscore#3]       StepMonitoring.java:96   | MEASURES
+2023-03-24 16:23:55,892 INFO [darlingfullscore#3]                 Page.java:279  | 31 raw measures: [8 in system#1, 8 in system#2, 8 in system#3, 7 in system#4]
+2023-03-24 16:23:55,892 INFO [darlingfullscore#3]       StepMonitoring.java:96   | CHORDS
+2023-03-24 16:23:55,897 INFO [darlingfullscore#3]       StepMonitoring.java:96   | CURVES
+2023-03-24 16:23:56,491 INFO [darlingfullscore#3]         SlursBuilder.java:160  | Slurs: 2
+2023-03-24 16:23:56,493 INFO [darlingfullscore#3]      SegmentsBuilder.java:114  | Segments: 11
+2023-03-24 16:23:56,495 INFO [darlingfullscore#3]       StepMonitoring.java:96   | SYMBOLS
+2023-03-24 16:23:56,750 INFO [darlingfullscore#3]       StepMonitoring.java:96   | LINKS
+2023-03-24 16:23:56,765 INFO [darlingfullscore#3]       StepMonitoring.java:96   | RHYTHMS
+2023-03-24 16:23:56,765 INFO [darlingfullscore#3]           PageRhythm.java:250  | {Page#3.1} Using last timeRational of previous page: 3/4
+2023-03-24 16:23:56,777 INFO [darlingfullscore#3]       StepMonitoring.java:96   | PAGE
+2023-03-24 16:23:56,779 INFO [darlingfullscore#3]                 Book.java:2076 | Book{darlingfullscore} storing
+2023-03-24 16:23:56,826 INFO [darlingfullscore#3]                 Book.java:2056 | Stored /book.xml
+2023-03-24 16:23:56,892 INFO [darlingfullscore#3]           DataHolder.java:297  | Stored /sheet#3/BINARY.png
+2023-03-24 16:23:57,441 INFO [darlingfullscore#3]                Sheet.java:1225 | Stored /sheet#3/sheet#3.xml
+2023-03-24 16:23:57,441 INFO [darlingfullscore#3]                 Book.java:2002 | Book stored as transcribed_s2m/darlingfullscore/darlingfullscore.omr
+2023-03-24 16:23:57,448 INFO [darlingfullscore#3]            SheetStub.java:1197 | Disposed sheet#3
+2023-03-24 16:23:57,522 INFO [darlingfullscore#3]                 Book.java:1767 | End of Stub#3 memory: 33,123,192
+2023-03-24 16:23:57,522 INFO [darlingfullscore#4]       StepMonitoring.java:96   | LOAD
+2023-03-24 16:23:57,534 INFO [darlingfullscore#4]                 Book.java:1558 | Loaded image 4 2549x3299 from /Users/kahhian/Downloads/darlingfullscore.pdf
+2023-03-24 16:23:57,535 INFO [darlingfullscore#4]       StepMonitoring.java:96   | BINARY
+2023-03-24 16:23:57,945 INFO [darlingfullscore#4]       StepMonitoring.java:96   | SCALE
+2023-03-24 16:23:57,946 INFO [darlingfullscore#4]         ScaleBuilder.java:234  | Beam  guessed height: 14 -- 0.50 of [6..21] range
+2023-03-24 16:23:57,946 INFO [darlingfullscore#4]         ScaleBuilder.java:253  | Beam measured height: 10 -- 0.27 of [6..21] range at 38% of needed quorum
+2023-03-24 16:23:57,946 WARN [darlingfullscore#4]         ScaleBuilder.java:276  | No reliable beam height found, guessed value: 14
+2023-03-24 16:23:57,947 INFO [darlingfullscore#4]            ScaleStep.java:63   | Scale{line(2,3,3) interline(20,21,21) beam(14 extra)}
+2023-03-24 16:23:57,947 INFO [darlingfullscore#4]       StepMonitoring.java:96   | GRID
+2023-03-24 16:23:57,982 INFO [darlingfullscore#4]       LinesRetriever.java:439  | Global slope: 0.00000
+2023-03-24 16:23:57,985 INFO [darlingfullscore#4]    ClustersRetriever.java:266  | Retrieved line clusters: 2 of sizes [5] with interline(20,21,21)
+2023-03-24 16:23:57,997 INFO [darlingfullscore#4]            PeakGraph.java:181  | Systems: #1[1, 2]
+2023-03-24 16:23:58,095 INFO [darlingfullscore#4]        SystemManager.java:840  | 1 part along 1 system
+2023-03-24 16:23:58,095 INFO [darlingfullscore#4]       StepMonitoring.java:96   | HEADERS
+2023-03-24 16:23:58,202 INFO [darlingfullscore#4]       StepMonitoring.java:96   | STEM_SEEDS
+2023-03-24 16:23:58,276 INFO [darlingfullscore#4]            ImageUtil.java:202  | Discarding alpha band ...
+2023-03-24 16:23:58,602 INFO [darlingfullscore#4]            ImageUtil.java:88   | Converting max RGB to gray
+2023-03-24 16:23:58,699 INFO [darlingfullscore#4]        StemSeedsStep.java:95   | stem(3 max:3)
+2023-03-24 16:23:58,701 INFO [darlingfullscore#4]       StepMonitoring.java:96   | BEAMS
+2023-03-24 16:24:03,413 INFO [darlingfullscore#4]       BlackHeadSizer.java:99   | Spots black-head retrieval diameter: 18.9
+2023-03-24 16:24:03,455 INFO [darlingfullscore#4]       StepMonitoring.java:96   | LEDGERS
+2023-03-24 16:24:03,493 INFO [darlingfullscore#4]       StepMonitoring.java:96   | HEADS
+2023-03-24 16:24:06,217 INFO [darlingfullscore#4]        HeadSeedTally.java:208  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:1.5]}
+2023-03-24 16:24:06,217 INFO [darlingfullscore#4]       StepMonitoring.java:96   | STEMS
+2023-03-24 16:24:06,312 INFO [darlingfullscore#4]       StepMonitoring.java:96   | REDUCTION
+2023-03-24 16:24:06,320 INFO [darlingfullscore#4]        ReductionStep.java:118  | Stems free length median value: 70 pixels, 3.3 interlines
+2023-03-24 16:24:06,320 INFO [darlingfullscore#4]       StepMonitoring.java:96   | CUE_BEAMS
+2023-03-24 16:24:06,320 INFO [darlingfullscore#4]       StepMonitoring.java:96   | TEXTS
+2023-03-24 16:24:07,007 INFO [darlingfullscore#4]       StepMonitoring.java:96   | MEASURES
+2023-03-24 16:24:07,007 INFO [darlingfullscore#4]                 Page.java:279  | 6 raw measures: [6 in system#1]
+2023-03-24 16:24:07,007 INFO [darlingfullscore#4]       StepMonitoring.java:96   | CHORDS
+2023-03-24 16:24:07,009 INFO [darlingfullscore#4]       StepMonitoring.java:96   | CURVES
+2023-03-24 16:24:07,426 INFO [darlingfullscore#4]         SlursBuilder.java:160  | Slurs: 0
+2023-03-24 16:24:07,427 INFO [darlingfullscore#4]      SegmentsBuilder.java:114  | Segments: 11
+2023-03-24 16:24:07,433 INFO [darlingfullscore#4]       StepMonitoring.java:96   | SYMBOLS
+2023-03-24 16:24:07,531 INFO [darlingfullscore#4]       StepMonitoring.java:96   | LINKS
+2023-03-24 16:24:07,531 INFO [darlingfullscore#4]        SymbolsLinker.java:161  | No chord near direction SentenceInter{#714(0.635) stf:1 S-41 Direction} 1 mt
+2023-03-24 16:24:07,538 INFO [darlingfullscore#4]       StepMonitoring.java:96   | RHYTHMS
+2023-03-24 16:24:07,539 INFO [darlingfullscore#4]           PageRhythm.java:250  | {Page#4.1} Using last timeRational of previous page: 3/4
+2023-03-24 16:24:07,542 INFO [darlingfullscore#4]       StepMonitoring.java:96   | PAGE
+2023-03-24 16:24:07,542 INFO [darlingfullscore#4]                 Book.java:2076 | Book{darlingfullscore} storing
+2023-03-24 16:24:07,584 INFO [darlingfullscore#4]                 Book.java:2056 | Stored /book.xml
+2023-03-24 16:24:07,640 INFO [darlingfullscore#4]           DataHolder.java:297  | Stored /sheet#4/BINARY.png
+2023-03-24 16:24:07,796 INFO [darlingfullscore#4]                Sheet.java:1225 | Stored /sheet#4/sheet#4.xml
+2023-03-24 16:24:07,796 INFO [darlingfullscore#4]                 Book.java:2002 | Book stored as transcribed_s2m/darlingfullscore/darlingfullscore.omr
+2023-03-24 16:24:07,804 INFO [darlingfullscore#4]            SheetStub.java:1197 | Disposed sheet#4
+2023-03-24 16:24:07,872 INFO [darlingfullscore#4]                 Book.java:1767 | End of Stub#4 memory: 33,209,312
+2023-03-24 16:24:08,250 INFO [darlingfullscore]            SheetStub.java:707  | Loaded /sheet#1/sheet#1.xml
+2023-03-24 16:24:08,589 INFO [darlingfullscore]            SheetStub.java:707  | Loaded /sheet#2/sheet#2.xml
+2023-03-24 16:24:08,843 INFO [darlingfullscore]            SheetStub.java:707  | Loaded /sheet#3/sheet#3.xml
+2023-03-24 16:24:08,978 INFO [darlingfullscore]            SheetStub.java:707  | Loaded /sheet#4/sheet#4.xml
+2023-03-24 16:24:08,979 INFO [darlingfullscore]                 Book.java:1820 | Scores built: 1
+2023-03-24 16:24:09,191 INFO [darlingfullscore]      PartwiseBuilder.java:2172 | Exporting sheet(s): [#1#2#3#4]
+2023-03-24 16:24:09,297 INFO [darlingfullscore]        ScoreExporter.java:92   | Score darlingfullscore exported to transcribed_s2m/darlingfullscore/darlingfullscore.mxl
+2023-03-24 16:24:09,352 INFO [darlingfullscore]                 Book.java:2056 | Stored /book.xml
+2023-03-24 16:24:09,352 INFO [darlingfullscore]                 Book.java:2002 | Book stored as transcribed_s2m/darlingfullscore/darlingfullscore.omr

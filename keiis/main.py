@@ -143,21 +143,22 @@ def practice(args):
         while bad_file2 == True:
             print("Audio/video file {} uploaded.".format(file_base_name))
             bad_file2 = False
+            a2m(input_file, "lessons") #test
 
-            # convert to midi
-            try:
+            # # convert to midi
+            # try:
 
-                a2m(input_file, "lessons")
+            #     a2m(input_file, "lessons")
 
-            # prevent crash
-            except Exception:
+            # # prevent crash
+            # except Exception:
 
-                print("Seems like something went wrong T_T\nPlease try again or check if there is something wrong with your input file or its format.")
-                bad_file2 = True
-                continue
+            #     print("Seems like something went wrong T_T\nPlease try again or check if there is something wrong with your input file or its format.")
+            #     bad_file2 = True
+            #     continue
 
-                # conversion successful
-                print("Conversion complete :)")
+            #     # conversion successful
+            #     print("Conversion complete :)")
 
         print("To exit practice mode, just close the website.")
     
