@@ -3,6 +3,7 @@
 import os
 import subprocess
 import shlex
+import sys
 
 def s2m(input_file, mode):
 
@@ -49,11 +50,48 @@ def s2m(input_file, mode):
         )
     )
 
+    if sys.platform.startswith('darwin') or sys.platform.startswith('linux'):
+        # mac and linux/bsd/unix
+        try:
+            subprocess.run(
+                shlex.split("mscore " + mode + "/{name}/{name}.mxl".format(name=file_name))
+            )
+        except Exception:
+            
+            # linux/bsd/unix
+            try:
+                subprocess.run(
+                    shlex.split("musescore " + mode + "/{name}/{name}.mxl".format(name=file_name))
+                )
+            except Exception:
+
+                # linux appimage mscore 4
+                try:
+                    subprocess.run(
+                        shlex.split("mscore4portable " + mode + "/{name}/{name}.mxl".format(name=file_name))
+                    )
+                except Exception:
+                    subprocess.run(
+                        shlex.split("mscore-portable " + mode + "/{name}/{name}.mxl".format(name=file_name))
+                    )
+    
+    # windows
+    elif sys.platform.startswith('win32'):
+
+        try:
+
+            subprocess.run(
+                shlex.split("MuseScore4.exe " + mode + "/{name}/{name}.mxl".format(name=file_name))
+            )
+        except Exception:
+            subprocess.run(
+                shlex.split("MuseScore3.exe " + mode + "/{name}/{name}.mxl".format(name=file_name))
+            )
 
     # musescore cli
-    subprocess.run(
-        shlex.split("mscore " + mode + "/{name}/{name}.mxl".format(name=file_name))
-    )
+    # subprocess.run(
+    #     shlex.split("mscore " + mode + "/{name}/{name}.mxl".format(name=file_name))
+    # )
 
     # # musescore cli
     # subprocess.run(
