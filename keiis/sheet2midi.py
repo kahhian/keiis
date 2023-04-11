@@ -7,18 +7,16 @@ import sys
 
 def s2m(input_file, mode):
 
-
+    # whitespaces in file name
+    if " " in input_file:
+        print(
+            'ERROR: Poor file name\nPlease use quotation marks around file name if it contains spaces. i.e "my file.pdf"'
+        )
+        return
+    
     # extracting file name
     file_full_name = os.path.basename(input_file)
     file_name = os.path.splitext(file_full_name)[0]  # extracts name of file without file extension 
-
-
-    # audiveris and musescore doesnt like whitespaces :/
-    if " " in file_name:
-        print(
-            "ERROR: Poor file name\nPlease ensure that there are no whitespaces (empty spaces) in the name of your file before trying again."
-        )
-        return
     
 
     # check if folder exists
