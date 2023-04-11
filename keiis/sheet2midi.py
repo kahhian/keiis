@@ -56,24 +56,28 @@ def s2m(input_file, mode):
             subprocess.run(
                 shlex.split("mscore " + mode + "/{name}/{name}.mxl".format(name=file_name))
             )
-        except Exception:
+        except FileNotFoundError:
             
             # linux/bsd/unix
             try:
                 subprocess.run(
                     shlex.split("musescore " + mode + "/{name}/{name}.mxl".format(name=file_name))
                 )
-            except Exception:
+            except FileNotFoundError:
 
                 # linux appimage mscore 4
                 try:
                     subprocess.run(
                         shlex.split("mscore4portable " + mode + "/{name}/{name}.mxl".format(name=file_name))
                     )
-                except Exception:
-                    subprocess.run(
-                        shlex.split("mscore-portable " + mode + "/{name}/{name}.mxl".format(name=file_name))
-                    )
+                except FileNotFoundError:
+                    # linux appimage mscore 3
+                    try:
+                        subprocess.run(
+                            shlex.split("mscore-portable " + mode + "/{name}/{name}.mxl".format(name=file_name))
+                        )
+                    except FileNotFoundError:
+                        print("ERROR: MuseScore not found. Please install MuseScore and try again. https://musescore.org/en/download")
     
     # windows
     elif sys.platform.startswith('win32'):
@@ -84,9 +88,13 @@ def s2m(input_file, mode):
                 shlex.split("MuseScore4.exe " + mode + "/{name}/{name}.mxl".format(name=file_name))
             )
         except Exception:
-            subprocess.run(
-                shlex.split("MuseScore3.exe " + mode + "/{name}/{name}.mxl".format(name=file_name))
-            )
+
+            try:
+                subprocess.run(
+                    shlex.split("MuseScore3.exe " + mode + "/{name}/{name}.mxl".format(name=file_name))
+                )
+            except FileNotFoundError:
+                print("ERROR: MuseScore not found. Please install MuseScore and try again. https://musescore.org/en/download")
 
     # musescore cli
     # subprocess.run(
