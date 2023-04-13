@@ -55,7 +55,7 @@ The directory of your keiis installation is usually in your home folder.
 ### Practice Mode:
 In your CLI, enter:
 ```
-python3 main.py -p <file>
+python3 keiis/main.py -p <file>
 ```
 Then enter the path of your practice sheet music (pdf/png/jpg) or original song (common audio/video formats) or MIDI file.\
 If you provided sheet music, a Musescore window will open soon. Edit the sheet music till it looks/sounds like your original song.\
@@ -66,31 +66,31 @@ Follow the instructions prompt thereafter.
 Used to obtain a MIDI file from your audio recording. (Accepts most audio and video file formats)\
 In your CLI, enter:
 ```
-python3 main.py -a2m <file>
+python3 keiis/main.py -a2m <file>
 ```
 ### Sheet Music To Midi:
 Used to obtain a MIDI file from your sheet music. (Accepts PDF and most image file formats)\
 In your CLI, enter:
 ```
-python3 main.py -s2m <file>
+python3 keiis/main.py -s2m <file>
 ```
 ### Midi To Piano Roll:
 Used to obtain a piano roll from your MIDI file.\
 In your CLI, enter:
 ```
-python3 main.py -m2pr <Midi file>
+python3 keiis/main.py -m2pr <Midi file>
 ```
 ### Midi Playback:
 Used to play audio from your MIDI file.\
 In your CLI, enter:
 ```
-python3 main.py -pm <Mp3 file>
+python3 keiis/main.py -pm <Mp3 file>
 ```
 ### Midi Comparison:
 Used to obtain comparisons of two or more MIDI files.\
 In your CLI, run:
 ```
-python3 main.py -mc
+python3 keiis/main.py -mc
 ```
 This opens a website that compares midi files.\
 Press the "Add Midi" button and add the midi files that you want to compare.
