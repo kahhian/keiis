@@ -1,63 +1,59 @@
 # keiis
 A helpful friend for piano practice.
 
-## Feature list: https://www.notion.so/bc6bfb8ff4f34ae4b0e050b117570f42?v=503bffb3330d4ce59d3b53945e48a833
-## Gantt Chart/Development Timeline: https://www.notion.so/outvision/10a8b4d4d1fc48f89fd2ab8f07a5fb55?v=596318bbdc24493ebb037eac4d52ac4f&pvs=4
+### Feature list: https://www.notion.so/bc6bfb8ff4f34ae4b0e050b117570f42?v=503bffb3330d4ce59d3b53945e48a833
+### Gantt Chart/Development Timeline: https://www.notion.so/outvision/10a8b4d4d1fc48f89fd2ab8f07a5fb55?v=596318bbdc24493ebb037eac4d52ac4f&pvs=4
 
-### General:
-In terminal run to install Homebrew:
+# Installation
+
+## For all devices:
+
+#### Install Python Version 3.9 or later:
+#### https://www.python.org/downloads
+#### Install the Java SE Development Kit 11.0.17 from the Oracle website: 
+#### https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
+If you are using:
+- a **M1/M2 (ARM) powered _Apple_** device, download and run the "macOS Arm 64 DMG Installer".	
+- an **Intel powered _Apple_** device, download and run the "macOS x64 DMG Installer". 
+- a **Windows** device, download and run the "Windows x64 Installer".
+- a **Linux** device, you should know which one to download :)
+
+### Now follow your operating system's specific procedure:
+
+## MacOS:
+#### 1. Install Homebrew by entering this line in Terminal:
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-In terminal run to install ffmpeg, musescore, git:
+#### 2. After installing Homebrew, enter these lines in Terminal one by one:
 ```
-brew install ffmpeg musescore git
-```
-In terminal run to install music21 and torch:
-```
-pip install music21
-
-pip install torch
+brew install ffmpeg musescore git fluidsynth
 ```
 ```
 pip install -r requirements.txt
-
-pip install piano_transcription_inference
 ```
-
-Installing Audiveris Dependencies:\
- \
-Please install Java Development Kit (JDK) Version 11 from Oracle.
-
-Please install Tesseract OCR Version 3.04 from here: https://github.com/tesseract-ocr/tesseract/releases/tag/3.04.00
-
-Then in terminal run these commands one at a time:
 ```
-git clone https://github.com/Audiveris/audiveris.git
-
-cd audiveris
-
-./gradlew build
-```
-
-Installing MIDI playback dependencies:\
- \
-In terminal run:
-```
-pip install midi2audio
-
-brew install fluidsynth
-
 mkdir -p ~/.fluidsynth
-
+```
+```
 ln -s soundfonts/salamander_grand_piano.sf2 ~/.fluidsynth/default_sound_font.sf2
 ```
+## Linux
+We are finalizing installations procedures for linux :D
+
+## Windows
+Still working on this!
+
+# Using keiis
+
+### Keiis is run via command line interface (Terminal/Command Prompt). 
+### To start keiis, enter this in your CLI:
+```
+cd <directory of your keiis installation>
+```
+The directory of your keiis installation is usually in your home folder.
 ### Practice Mode:
-In terminal run:
-```
-cd <directory of the keiis file>
-```
-Then run:
+In your CLI, enter:
 ```
 python3 main.py -p <file>
 ```
@@ -67,64 +63,44 @@ Once finished editing, on Musescore go to File > Export, and then change format 
 Follow the instructions prompt thereafter.
 
 ### Audio To Midi:
-In terminal run:
+Used to obtain a MIDI file from your audio recording. (Accepts most audio and video file formats)\
+In your CLI, enter:
 ```
-cd <directory of the keiis file>
-```
-Then run to obtain midi file:
-```
-python3 audio2midi.py -a2m <Mp3 file>
+python3 audio2midi.py -a2m <file>
 ```
 ### Sheet Music To Midi:
-In terminal run:
+Used to obtain a MIDI file from your sheet music. (Accepts PDF and most image file formats)\
+In your CLI, enter:
 ```
-cd <directory of the keiis file>
-```
-Then run to obtain midi file:
-```
-python3 sheet2midi.py -s2m <JPEG/JPG/PDF/PNG file>
+python3 sheet2midi.py -s2m <file>
 ```
 ### Midi To Piano Roll:
-In terminal, run:
-```
-cd <directory of the keiis file>
-```
-Then run to obtain piano roll:
+Used to obtain a piano roll from your MIDI file.\
+In your CLI, enter:
 ```
 python3 main.py -m2pr <Midi file>
 ```
 ### Midi Playback:
-
-In terminal run:
-```
-cd <directory of the keiis file>
-```
-Then run to obtain mp3 file:
+Used to play audio from your MIDI file.\
+In your CLI, enter:
 ```
 python3 main.py -pm <Mp3 file>
 ```
 ### Midi Comparison:
-In terminal, run:
-```
-cd <directory of the keiis file>
-```
-Then run to compare midi files:
+Used to obtain comparisons of two or more MIDI files.\
+In your CLI, run:
 ```
 python3 main.py -mc
 ```
-This opens a website that compares midi files.
-
+This opens a website that compares midi files.\
 Press the "Add Midi" button and add the midi files that you want to compare.
 
 
 
 
 ### Youtube Import:
-In terminal run:
-```
-python3 -m pip install -U yt-dlp
-```
-Then run to obtain mp3 file:
+
+Run to obtain mp3 file:
 ```
 yt-dlp -x --audio-format mp3 <video URL>
 ```
