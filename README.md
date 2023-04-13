@@ -66,13 +66,13 @@ Follow the instructions prompt thereafter.
 Used to obtain a MIDI file from your audio recording. (Accepts most audio and video file formats)\
 In your CLI, enter:
 ```
-python3 audio2midi.py -a2m <file>
+python3 main.py -a2m <file>
 ```
 ### Sheet Music To Midi:
 Used to obtain a MIDI file from your sheet music. (Accepts PDF and most image file formats)\
 In your CLI, enter:
 ```
-python3 sheet2midi.py -s2m <file>
+python3 main.py -s2m <file>
 ```
 ### Midi To Piano Roll:
 Used to obtain a piano roll from your MIDI file.\
