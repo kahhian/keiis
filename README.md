@@ -1,8 +1,10 @@
 # keiis
 ### Enhancing your piano practice sessions with machine learning.
 
-#### Feature list: https://www.notion.so/bc6bfb8ff4f34ae4b0e050b117570f42?v=503bffb3330d4ce59d3b53945e48a833
-#### Gantt Chart/Development Timeline: https://www.notion.so/outvision/10a8b4d4d1fc48f89fd2ab8f07a5fb55?v=596318bbdc24493ebb037eac4d52ac4f&pvs=4
+#### Feature list: 
+https://www.notion.so/bc6bfb8ff4f34ae4b0e050b117570f42?v=503bffb3330d4ce59d3b53945e48a833
+#### Gantt Chart/Development Timeline: 
+https://www.notion.so/outvision/10a8b4d4d1fc48f89fd2ab8f07a5fb55?v=596318bbdc24493ebb037eac4d52ac4f&pvs=4
 
 # Installation
 
@@ -27,7 +29,7 @@ If you are using:
 ```
 #### 2. After installing Homebrew, enter these lines in Terminal one by one:
 ```
-brew install ffmpeg musescore git fluidsynth
+brew install ffmpeg musescore git fluidsynth wget
 ```
 ```
 pip install -r requirements.txt
@@ -104,19 +106,4 @@ Run to obtain mp3 file:
 ```
 yt-dlp -x --audio-format mp3 <video URL>
 ```
-We will integrate this feature into keiis in the future
-
-### Known possible errors:
-Error 1:\
-![plot](./FileNotFoundError.jpeg)\
-Run:
-```
-brew install wget
-```
-Error 2:\
-![plot](./audioread.exception.NoBackendError.png) \
-Run:
-```
-brew install ffmpeg
-```
-
+We will integrate this feature into keiis in the future.
