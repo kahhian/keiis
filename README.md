@@ -34,12 +34,16 @@ brew install ffmpeg musescore git fluidsynth wget
 ```
 pip install -r requirements.txt
 ```
+<!---
+(defunct midi playback)
 ```
 mkdir -p ~/.fluidsynth
 ```
 ```
 ln -s soundfonts/salamander_grand_piano.sf2 ~/.fluidsynth/default_sound_font.sf2
 ```
+-->
+
 ## Linux
 We are finalizing installations procedures for linux :D
 
@@ -91,12 +95,16 @@ In your CLI, enter:
 ```
 python3 keiis/main.py -m2pr <Midi file>
 ```
+
+<!---
 ### Midi Playback:
 Used to play audio from your MIDI file.\
 In your CLI, enter:
 ```
 python3 keiis/main.py -pm <Mp3 file>
 ```
+-->
+
 ### Midi Comparison:
 Used to obtain comparisons of two or more MIDI files.\
 In your CLI, run:
