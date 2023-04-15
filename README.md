@@ -43,6 +43,15 @@ ln -s soundfonts/salamander_grand_piano.sf2 ~/.fluidsynth/default_sound_font.sf2
 ## Linux
 We are finalizing installations procedures for linux :D
 
+
+#### 1. In Terminal, enter:
+```
+sudo apt-get install ffmpeg git fluidsynth wget
+```
+```
+pip install -r requirements.txt
+```
+
 ## Windows
 Still working on this!
 
