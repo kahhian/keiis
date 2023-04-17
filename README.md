@@ -45,7 +45,7 @@ ln -s soundfonts/salamander_grand_piano.sf2 ~/.fluidsynth/default_sound_font.sf2
 -->
 
 ## Linux
-We are finalizing installations procedures for linux :D
+We are finalizing installations procedures for linux, keiis may still not fully work after these instructions.
 
 
 #### 1. In Terminal, enter:
