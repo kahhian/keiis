@@ -61,16 +61,16 @@ Work in progress
 
 
 #### 1. Install ffmepg through the first link, then follow the steps in the second link:
-```
+
 https://ffmpeg.org/download.html
-```
-```
+
+
 https://www.geeksforgeeks.org/how-to-install-ffmpeg-on-windows/
-```
+
 #### 2. Install Chocolatey with either Command Prompt/Powershell:
-```
+
 https://docs.chocolatey.org/en-us/choco/setup
-```
+
 
 #### 3. After installing Chocolatey, enter these lines in either Command Prompt/Powershell:
 ```
