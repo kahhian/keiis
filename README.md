@@ -23,7 +23,10 @@ If you are using:
 
 ### Now follow your operating system's specific procedure:
 
-## MacOS:
+<details>
+<summary>MacOS</summary>
+  
+## MacOS
 #### 1. Install Homebrew by entering this line in Terminal:
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -35,6 +38,7 @@ brew install ffmpeg musescore git fluidsynth wget
 ```
 pip install -r requirements.txt
 ```
+</details>
 <!---
 (defunct midi playback)
 ```
@@ -44,6 +48,8 @@ mkdir -p ~/.fluidsynth
 ln -s soundfonts/salamander_grand_piano.sf2 ~/.fluidsynth/default_sound_font.sf2
 ```
 -->
+<details>
+<summary>Linux</summary>
 
 ## Linux
 We are finalizing installations procedures for linux, keiis may still not fully work after these instructions.
@@ -56,10 +62,14 @@ sudo apt-get install ffmpeg git fluidsynth wget
 ```
 pip install -r requirements.txt
 ```
+</details>
 
+<details>
+<summary>Windows</summary>
+  
 ## Windows
-Work in progress
 
+Work in progress
 
 #### 1. Install ffmepg through the first link, then follow the steps in the second link:
 
@@ -78,6 +88,7 @@ choco install musescore git fluidsynth wget
 ```
 pip install -r requirements.txt
 ```
+</details>
 
 # Using keiis
 
@@ -87,6 +98,8 @@ pip install -r requirements.txt
 cd <directory of your keiis installation>
 ```
 The directory of your keiis installation is usually in your home folder.
+
+<!---
 ### Practice Mode:
 In your CLI, enter:
 ```
@@ -96,6 +109,7 @@ Then enter the path of your practice sheet music (pdf/png/jpg) or original song 
 If you provided sheet music, a Musescore window will open soon. Edit the sheet music till it looks/sounds like your original song.\
 Once finished editing, on Musescore go to File > Export, and then change format to MIDI file. DO NOT CHANGE THE FILE NAME.Click export, and then close the Musescore window. You will be prompted to save the Musescore (.mscz) file. Save the file.DO NOT CHANGE THE FILE NAME.\
 Follow the instructions prompt thereafter.
+-->
 
 ### Audio To Midi:
 Used to obtain a MIDI file from your audio recording. (Accepts most audio and video file formats)\
