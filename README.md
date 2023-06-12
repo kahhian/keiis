@@ -71,7 +71,7 @@ pip install -r requirements.txt
 
 Work in progress
 
-#### 1. Install ffmepg through the first link, then follow the steps in the second link:
+#### 1. Follow the steps in the second link on how to install ffmepg through the first link:
 
 #### https://ffmpeg.org/download.html
 
