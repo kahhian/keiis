@@ -71,17 +71,15 @@ pip install -r requirements.txt
 
 Work in progress
 
-#### 1. Follow the steps in the second link on how to install ffmepg through the first link:
-
-#### https://ffmpeg.org/download.html
+#### 1. Follow the steps in the link below on how to install ffmpeg:
 
 #### https://www.geeksforgeeks.org/how-to-install-ffmpeg-on-windows/
 
-#### 2. Install Chocolatey with either Command Prompt/Powershell:
+#### 2. Install Chocolatey with either Command Prompt or Powershell:
 
 #### https://docs.chocolatey.org/en-us/choco/setup
 
-#### 3. After installing Chocolatey, enter these lines in either Command Prompt/Powershell:
+#### 3. After installing Chocolatey, enter these lines in either Command Prompt or Powershell:
 ```
 choco install musescore git fluidsynth wget
 ```
