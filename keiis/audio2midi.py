@@ -12,11 +12,11 @@ def a2m(input_file, mode):
 
     # check if folder exists
     if sys.platform.startswith('darwin') or sys.platform.startswith('linux'):
-        new_path = mode+"/" + file_name
-        midi_path = mode+"/" + file_name + "/"+ file_name + ".mid"
+        new_path = mode + "/" + file_name
+        midi_path = mode + "/" + file_name + "/" + file_name + ".mid"
     elif sys.platform.startswith('win32'):
-        new_path = mode+"\\" + file_name
-        midi_path = mode+"\\" + file_name + "\\"+ file_name + ".mid"
+        new_path = mode + "\\" + file_name
+        midi_path = mode + "\\" + file_name + "\\" + file_name + ".mid"
 
     print("Writing to "+new_path)
 
