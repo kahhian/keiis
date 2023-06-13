@@ -69,7 +69,7 @@ pip install -r requirements.txt
   
 ## Windows
 
-Work in progress
+Work in Progress
 
 #### 1. Follow the steps in the link below on how to install ffmpeg:
 
@@ -79,7 +79,7 @@ Work in progress
 
 #### https://docs.chocolatey.org/en-us/choco/setup
 
-#### 3. After installing Chocolatey, enter these lines one by one in Command Prompt:
+#### 3. After installing Chocolatey, enter these lines one by one in Command Prompt(run as administrator):
 ```
 choco install musescore git fluidsynth wget
 ```
@@ -89,6 +89,8 @@ cd <directory of your keiis installation>
 ```
 pip install -r requirements.txt
 ```
+#### 4. Additional details:
+Go to Settings > Search for "Manage App Execution Aliases" > Turn off "python3.exe"
 </details>
 
 # Using keiis
@@ -116,19 +118,19 @@ Follow the instructions prompt thereafter.
 Used to obtain a MIDI file from your audio recording. (Accepts most audio and video file formats)\
 In your CLI, enter:
 ```
-python3 keiis/main.py -a2m <file>
+python3 keiis/main.py -a2m <path of file>
 ```
 ### Sheet Music To Midi:
 Used to obtain a MIDI file from your sheet music. (Accepts PDF and most image file formats)\
 In your CLI, enter:
 ```
-python3 keiis/main.py -s2m <file>
+python3 keiis/main.py -s2m <path of file>
 ```
 ### Midi To Piano Roll:
 Used to obtain a piano roll from your MIDI file.\
 In your CLI, enter:
 ```
-python3 keiis/main.py -m2pr <Midi file>
+python3 keiis/main.py -m2pr <path of Midi file>
 ```
 
 <!---
