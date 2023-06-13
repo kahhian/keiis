@@ -83,7 +83,10 @@ def practice(args):
             mimestart = mimetypes.guess_type(file_base_name)[0]
 
             if mimestart != None:
-                mimestart = mimestart.split('/')[0]
+                if sys.platform.startswith('darwin') or sys.platform.startswith('linux'):
+                    mimestart = mimestart.split('/')[0]
+                elif sys.platform.startswith('win32'):
+                    mimestart = mimestart.split('\\')[0]
                 
                 # if file format is invaild
                 if mimestart not in ['audio', 'video']:
@@ -113,7 +116,10 @@ def practice(args):
 
                     # show piano roll
                     print("Loading piano roll...")
-                    stream = converter.parse("lessons/{0}/{0}.mid".format(file_name))
+                    if sys.platform.startswith('darwin') or sys.platform.startswith('linux'):
+                        stream = converter.parse("lessons/{0}/{0}.mid".format(file_name))
+                    elif sys.platform.startswith('win32'):
+                        stream = converter.parse("lessons\\{0}\\{0}.mid".format(file_name))
                     stream.id = "stream"
                     stream.plot("pianoroll")
                     bad_file = False
