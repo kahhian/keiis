@@ -1,6 +1,7 @@
 # kahhian
 
 import os
+import sys
 import music21
 
 def a2m(input_file, mode):
@@ -10,8 +11,12 @@ def a2m(input_file, mode):
     file_name = os.path.splitext(file_full_name)[0]  
 
     # check if folder exists
-    new_path = mode+"/" + file_name  #+ "/" + file_name + ".mid"
-    midi_path = mode+"/" + file_name + "/"+ file_name + ".mid"
+    if sys.platform.startswith('darwin') or sys.platform.startswith('linux'):
+        new_path = mode+"/" + file_name
+        midi_path = mode+"/" + file_name + "/"+ file_name + ".mid"
+    elif sys.platform.startswith('win32'):
+        new_path = mode+"\\" + file_name
+        midi_path = mode+"\\" + file_name + "\\"+ file_name + ".mid"
 
     print("Writing to "+new_path)
 
