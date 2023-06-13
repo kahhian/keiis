@@ -75,13 +75,16 @@ Work in progress
 
 #### https://www.geeksforgeeks.org/how-to-install-ffmpeg-on-windows/
 
-#### 2. Install Chocolatey with either Command Prompt or Powershell:
+#### 2. Install Chocolatey using Command Prompt:
 
 #### https://docs.chocolatey.org/en-us/choco/setup
 
-#### 3. After installing Chocolatey, enter these lines in either Command Prompt or Powershell:
+#### 3. After installing Chocolatey, enter these lines one by one in Command Prompt:
 ```
 choco install musescore git fluidsynth wget
+```
+```
+cd <directory of your keiis installation>
 ```
 ```
 pip install -r requirements.txt
