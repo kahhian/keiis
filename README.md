@@ -69,8 +69,6 @@ pip install -r requirements.txt
   
 ## Windows
 
-Work in Progress
-
 #### 1. Follow the steps in the link below to install ffmpeg:
 
 #### https://www.geeksforgeeks.org/how-to-install-ffmpeg-on-windows/
