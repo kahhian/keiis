@@ -83,13 +83,13 @@ def s2m(input_file, mode):
         try:
 
             subprocess.run(
-                shlex.split("MuseScore4.exe " + mode + "/{name}/{name}.mxl".format(name=file_name))
+                shlex.split("MuseScore4.exe " + mode + "\{name}\{name}.mxl".format(name=file_name))
             )
         except Exception:
 
             try:
                 subprocess.run(
-                    shlex.split("MuseScore3.exe " + mode + "/{name}/{name}.mxl".format(name=file_name))
+                    shlex.split("MuseScore3.exe " + mode + "\{name}\{name}.mxl".format(name=file_name))
                 )
             except FileNotFoundError:
                 print("ERROR: MuseScore not found. Please install MuseScore and try again. https://musescore.org/en/download")
