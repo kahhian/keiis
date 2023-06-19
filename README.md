@@ -90,6 +90,7 @@ pip install -r requirements.txt
 #### 4. Additional details:
 - Go to Settings > Search for "Manage App Execution Aliases" > Turn off "python3.exe"
 - For steps below on the usage of keiis, use "py keiis\main.py … " instead of "python3 keiis/main.py … "
+  
 </details>
 
 # Using keiis
