@@ -110,7 +110,7 @@ python3 keiis/main.py -p <file>
 ```
 Then enter the path of your practice sheet music (pdf/png/jpg) or original song (common audio/video formats) or MIDI file.\
 If you provided sheet music, a Musescore window will open soon. Edit the sheet music till it looks/sounds like your original song.\
-Once finished editing, on Musescore go to File > Export, and then change format to MIDI file. DO NOT CHANGE THE FILE NAME.Click export, and then close the Musescore window. You will be prompted to save the Musescore (.mscz) file. Save the file.DO NOT CHANGE THE FILE NAME.\
+Once finished editing, on Musescore go to File > Export, and then change format to MIDI file. DO NOT CHANGE THE FILE NAME. Click export, and then close the Musescore window. You will be prompted to save the Musescore (.mscz) file. Save the file.DO NOT CHANGE THE FILE NAME.\
 Follow the instructions prompt thereafter.
 
 
